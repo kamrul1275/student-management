@@ -9,8 +9,13 @@ exports.register = (req, res) => {
     res.send('User registration successful..');
 };
 
+
+
+
 exports.login = async (req, res) => {
     const { email, password } = req.body;
+
+    console.log("email", email);
 
     if (!email || !password) {
         return res.status(400).send('Email and password are required');

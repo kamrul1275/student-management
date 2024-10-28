@@ -6,10 +6,10 @@ const router = express.Router();
 const authenticationController = require('../controllers/authenticationController');
 
 // Define routes for the controllers
-router.post('/user/register', authenticationController.register);
-router.post('/user/login', authenticationController.login);
-router.post('/user/logout', authenticationController.logout);
-router.get('/user/dashboard', authenticationController.dashboard);
+router.post('/register', authenticationController.register);
+router.post('/login', authenticationController.login);
+router.post('/logout', authenticationController.logout);
+router.get('/dashboard', authenticationController.dashboard);
 
 module.exports = router;
 
